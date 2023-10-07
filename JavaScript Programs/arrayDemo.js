@@ -23,4 +23,20 @@ for(var n of num1){
     document.write("<br/> Value is "+n)
 }
 
+document.write("<br/> Retreive the elements using forEach function with callback concept<br/>")
+
+num1.forEach(display);
+function display(v,i,abc){
+    document.write("<br/> Value is "+v+" Index "+i+"Array "+abc);
+}
+
+document.write("<br/> passing function body using experssion style<br/>")
+num1.forEach(function(n){
+    document.write("<br/> Value is "+n)
+});
+
+document.write("<br/> passing function body using arrow style<br/>")
+num1.forEach(v=>document.write("<br/> Value is "+v));
+
+
 
